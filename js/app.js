@@ -14,6 +14,7 @@ function alterarStatus(id) {
         botaoRetornar.classList.contains('dashboard__item__button--return');
         botaoRetornar.classList.remove('dashboard__item__button--return');
         botaoRetornar.textContent = 'Alugar';
+        jogosAlugados--;
         
     } else {
         // Mensagem ao alugar o jogo
@@ -21,6 +22,7 @@ function alterarStatus(id) {
         imgAlugado.classList.add('dashboard__item__img--rented');
         botaoRetornar.classList.add('dashboard__item__button--return')
         botaoRetornar.textContent = 'Devolver';
+        jogoAlugado++;
     }
 
 }
